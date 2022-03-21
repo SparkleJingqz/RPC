@@ -52,6 +52,16 @@
   - InvocationHandler: <u>每个代理实例都会有的一个关联调用处理程序.</u> 对被代理实例进行调用时, 将对方法的调用进行编码并指派到其invoke方法, 根据传入代理对象,方法名称,参数决定具体方法的调用.
   - newProxyInstance(类加载器, 被代理类实现接口组, handler实现类) 创建代理类实例
 
+- 为什么要用动态代理: 客户端没有通用接口的实现类，**通过动态代理获取服务端对应的执行结果，以通用接口作为结果的引用。**
+
+- Proxy
+  1. getProxyClass(ClassLoader, interfaces) : 传入类加载器与一组实现类接口，得到代理class对象
+     - 从传入的接口Class中拷贝类结构信息到一个新的Class对象中，且新的Class对象带有构造器可以创建对象 (需传入InvocationHandler)
+     - newProxyInstance(ClassLoader, interfaces, invocationHandler) 直接生成代理对象，根据invocationHandler中的invoke方法实现对被代理对象的实现&增强
+  2. InvocationHandler: 内含被代理对象obj, 每次调用代理对象的方法最终都会调用其中的invoke方法，(反射实现，根据method与参数类型确认实现方法)，可环绕增强。
+     - RPC远程调用中的invoke方法根据传入的host，port确定服务端的位置，进而根据方法名称、参数类型确定被代理对象的执行，将执行结果通过网络封装到RpcResponse中回传给客户端。 *实现客户端无实现类而得到实现结果。*
+     - 区别于本地invoke： 直接传入被代理对象在invoke方法中执行对被代理对象的反射调用
+
 
 
 

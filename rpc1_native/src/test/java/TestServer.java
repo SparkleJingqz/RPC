@@ -1,4 +1,4 @@
-import Common.HelloService;
+import rpc_api.Common.HelloService;
 import Server.HelloServiceImpl;
 import Server.RpcServer;
 

@@ -1,6 +1,6 @@
 import Client.HelloObject;
 import Client.RpcClientProxy;
-import Common.HelloService;
+import rpc_api.Common.HelloService;
 
 /**
  * 1.根据动态代理获取实现类<br>

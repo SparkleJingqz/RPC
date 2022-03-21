@@ -1,4 +1,4 @@
-package Common;
+package rpc_api.Common;
 
 import Client.HelloObject;
 
