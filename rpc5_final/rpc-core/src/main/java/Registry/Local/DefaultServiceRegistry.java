@@ -1,7 +1,7 @@
 package Registry.Local;
 
 import Exception.RpcException;
-import Error.RpcError;
+import Enumeration.RpcError;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

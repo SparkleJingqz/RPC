@@ -1,7 +1,7 @@
 package Exception;
 
 
-import Error.RpcError;
+import Enumeration.RpcError;
 public class RpcException extends RuntimeException{
 
     public RpcException(RpcError error, String detail) {

@@ -32,6 +32,7 @@ public class SocketServer implements RpcServer {
         threadPool = new ThreadPoolExecutor(corePoolSize, maximumPoolSize, keepAliveTime, TimeUnit.SECONDS, workingQueue, threadFactory);
         this.serviceRegistry = serviceRegistry;
         requestHandler = new RequestHandler();
+        scanServices();
     }
 
     //改进后的rpcServer不需要注册服务,只需要开启服务即可,注册服务通过传入的registry
@@ -53,6 +54,6 @@ public class SocketServer implements RpcServer {
 
     @Override
     public <T> void publishService(Object service, Class<T> serviceClass) {
-
+        serviceRegistry.register(service);
     }
 }

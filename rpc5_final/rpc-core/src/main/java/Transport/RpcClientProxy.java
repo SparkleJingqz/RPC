@@ -22,8 +22,7 @@ public class RpcClientProxy implements InvocationHandler {
 
     //传递host,port指明服务端位置,生成代理对象
     public <T> T getProxy(Class<T> clazz) {
-        return (T) Proxy.newProxyInstance(clazz.getClassLoader(), new Class<?>[]{clazz}, this);
-    }
+        return (T) Proxy.newProxyInstance(clazz.getClassLoader(), new Class<?>[]{clazz}, this);}
 
     @Override
     public Object invoke(Object proxy, Method method, Object[] args) {

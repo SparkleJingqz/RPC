@@ -1,7 +1,7 @@
 package Transport.Netty.Server;
 
 import Exception.RpcException;
-import Error.RpcError;
+import Enumeration.RpcError;
 import Coder.CommonDecoder;
 import Coder.CommonEncoder;
 import Hook.ShutDownHook;
@@ -36,10 +36,13 @@ public class NettyServer implements RpcServer {
     private ServiceRegistry serviceRegistry;
 
 
-    public NettyServer(String host, int port) {
+    public NettyServer(String host, int port, int serializerCode, int balancerCode) {
         serviceRegistry = new DefaultServiceRegistry();
         this.host = host;
         this.port = port;
+        setSerializer(serializerCode);
+        setBalancer(balancerCode);
+        scanServices();
     }
 
     @Override

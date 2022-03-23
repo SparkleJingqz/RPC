@@ -4,7 +4,7 @@ import Entity.RpcRequest;
 import Entity.RpcResponse;
 import Enumeration.PackageType;
 import Exception.RpcException;
-import Error.RpcError;
+import Enumeration.RpcError;
 import Serializer.CommonSerializer;
 import io.netty.buffer.ByteBuf;
 import io.netty.channel.ChannelHandlerContext;

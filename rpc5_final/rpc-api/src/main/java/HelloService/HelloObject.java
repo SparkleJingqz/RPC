@@ -1,4 +1,4 @@
-package HelloServiceImpl;
+package HelloService;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

@@ -18,6 +18,7 @@ import io.netty.util.AttributeKey;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+
 import java.net.InetSocketAddress;
 import java.util.concurrent.atomic.AtomicReference;
 
@@ -61,7 +62,8 @@ public class NettyClient implements RpcClient {
 
     @Override
     public Object sendRequest(RpcRequest rpcRequest) {
-        AtomicReference result = new AtomicReference(null);
+
+//        AtomicReference result = new AtomicReference(null);
         try {
             //修改为从远程服务注册中心获取Ip地址与端口号而非本地定义
             InetSocketAddress inetSocketAddress = remoteRegistry.lookupService(rpcRequest.getInterfaceName());

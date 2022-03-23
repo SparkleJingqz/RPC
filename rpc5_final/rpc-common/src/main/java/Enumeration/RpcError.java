@@ -1,4 +1,4 @@
-package Error;
+package Enumeration;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

@@ -1,4 +1,4 @@
-package ByeServiceImpl;
+package Server.ByeServiceImpl;
 
 import Annotation.Service;
 import ByeService.ByeService;

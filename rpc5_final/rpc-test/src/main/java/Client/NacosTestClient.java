@@ -1,4 +1,4 @@
-package NettyTest;
+package Client;
 
 import ByeService.ByeService;
 import HelloService.HelloService;

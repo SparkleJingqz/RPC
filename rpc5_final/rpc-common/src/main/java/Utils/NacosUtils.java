@@ -1,7 +1,7 @@
 package Utils;
 
+import Enumeration.RpcError;
 import Exception.RpcException;
-import Error.*;
 import com.alibaba.nacos.api.exception.NacosException;
 import com.alibaba.nacos.api.naming.NamingFactory;
 import com.alibaba.nacos.api.naming.NamingService;

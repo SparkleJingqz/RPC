@@ -1,4 +1,4 @@
-package HelloServiceImpl;
+package Server.HelloServiceImpl;
 
 import HelloService.*;
 import Annotation.Service;

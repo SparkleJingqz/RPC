@@ -1,7 +1,7 @@
 package Registry.Remote;
 
 import Exception.RpcException;
-import Error.RpcError;
+import Enumeration.RpcError;
 import Balancer.LoadBalancer;
 import com.alibaba.nacos.api.exception.NacosException;
 import com.alibaba.nacos.api.naming.NamingFactory;
@@ -24,7 +24,6 @@ public class NacosRemoteRegistry implements RemoteRegistry {
     private static final String SERVER_ADDER = "127.0.0.1:8848";
     private static final NamingService ns;
     private LoadBalancer loadBalancer;
-
 
     static {
         try {
