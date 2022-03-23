@@ -2,7 +2,7 @@
 
 RPC: Remote Procedure Call - 远程过程调用，对应客户端只有通用接口却想要去执行服务端提供的实现类函数/方法，需通过网络来传达调用的语义与数据。
 
-![RpcStructure2](D:\java_web\RPC\static\RpcStructure2.jpg)
+![RpcStructure2](.\static\RpcStructure2.jpg)
 
 **服务寻址** -- 基于Nacos实现服务的注册与发现，通过一定的负载均衡策略寻找服务地址
 
@@ -14,7 +14,7 @@ RPC: Remote Procedure Call - 远程过程调用，对应客户端只有通用接
 
 ## 架构-final
 
-![rpc_structure](D:\java_web\RPC\static\rpc_structure.png)
+![rpc_structure](.\static\rpc_structure.png)
 
 - 客户端向服务器传递RpcRequest来传递自己想要实现的服务，通过动态代理获取实现类方法返回对象。
 - 客户端通过Nacos远程注册中心可查询能处理自己请求的服务端列表，根据Nacos实现的负载均衡策略提供具体服务端。
