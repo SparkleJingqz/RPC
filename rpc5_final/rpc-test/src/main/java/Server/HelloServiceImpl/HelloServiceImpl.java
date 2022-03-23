@@ -1,9 +1,13 @@
-package HelloService;
+package HelloServiceImpl;
 
+import HelloService.*;
+import Annotation.Service;
+import HelloService.HelloService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 
+@Service
 public class HelloServiceImpl implements HelloService {
     private static final Logger logger = LoggerFactory.getLogger(HelloServiceImpl.class);
     @Override

@@ -1,9 +1,11 @@
-package ByeService;
+package ByeServiceImpl;
 
-import HelloService.HelloServiceImpl;
+import Annotation.Service;
+import ByeService.ByeService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+@Service
 public class ByeImpl implements ByeService {
     private static final Logger logger = LoggerFactory.getLogger(ByeImpl.class);
     @Override

@@ -1,3 +1,5 @@
+package NettyTest;
+
 import ByeService.ByeService;
 import HelloService.HelloService;
 import Serializer.KryoSerializer;
