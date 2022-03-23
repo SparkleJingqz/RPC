@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2b7cd4e3-0c9c-43ff-949f-75d8fd6474db" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../rpc4_nacos/src/test/java/NacosTestClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/../rpc4_nacos/src/test/java/NacosTestClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../rpc4_nacos/src/test/java/NacosTestServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../rpc4_nacos/src/test/java/NacosTestServer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../rpc4_nacos/target/test-classes/NacosTestClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/../rpc4_nacos/target/test-classes/NacosTestClient.class" afterDir="false" />
@@ -13,13 +12,11 @@
       <change beforePath="$PROJECT_DIR$/../rpc5_final/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../rpc5_final/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../rpc5_final/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../rpc5_final/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../rpc5_final/rpc-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../rpc5_final/rpc-api/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rpc5_final/rpc-api/src/main/java/ByeService/Bye2Impl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../rpc5_final/rpc-test/src/main/java/Server/ByeServiceImpl/Bye2Impl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rpc5_final/rpc-api/src/main/java/ByeService/ByeImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../rpc5_final/rpc-test/src/main/java/Server/ByeServiceImpl/ByeImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rpc5_final/rpc-api/src/main/java/HelloService/HelloServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../rpc5_final/rpc-test/src/main/java/Server/HelloServiceImpl/HelloServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc5_final/rpc-api/src/main/java/HelloService/HelloObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/../rpc5_final/rpc-api/src/main/java/HelloService/HelloObject.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../rpc5_final/rpc-api/target/classes/ByeService/Bye2Impl.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../rpc5_final/rpc-api/target/classes/ByeService/ByeImpl.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../rpc5_final/rpc-api/target/classes/HelloService/HelloServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rpc5_final/rpc-common/src/main/java/Error/RpcError.java" beforeDir="false" afterPath="$PROJECT_DIR$/../rpc5_final/rpc-common/src/main/java/Enumeration/RpcError.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc5_final/rpc-common/src/main/java/Enumeration/RpcError.java" beforeDir="false" afterPath="$PROJECT_DIR$/../rpc5_final/rpc-common/src/main/java/Enumeration/RpcError.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../rpc5_final/rpc-common/src/main/java/Exception/RpcException.java" beforeDir="false" afterPath="$PROJECT_DIR$/../rpc5_final/rpc-common/src/main/java/Exception/RpcException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../rpc5_final/rpc-common/src/main/java/Utils/NacosUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/../rpc5_final/rpc-common/src/main/java/Utils/NacosUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../rpc5_final/rpc-common/target/classes/Error/RpcError.class" beforeDir="false" />
@@ -45,8 +42,11 @@
       <change beforePath="$PROJECT_DIR$/../rpc5_final/rpc-core/target/classes/Transport/RpcServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/../rpc5_final/rpc-core/target/classes/Transport/RpcServer.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../rpc5_final/rpc-core/target/classes/Transport/Socket/Client/SocketClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/../rpc5_final/rpc-core/target/classes/Transport/Socket/Client/SocketClient.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../rpc5_final/rpc-core/target/classes/Transport/Socket/Server/SocketServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/../rpc5_final/rpc-core/target/classes/Transport/Socket/Server/SocketServer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rpc5_final/rpc-test/src/test/java/NacosTestClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/../rpc5_final/rpc-test/src/main/java/Client/NacosTestClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../rpc5_final/rpc-test/src/test/java/NacosTestServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../rpc5_final/rpc-test/src/main/java/Server/NacosTestServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc5_final/rpc-test/src/main/java/Client/NacosTestClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/../rpc5_final/rpc-test/src/main/java/Client/NacosTestClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc5_final/rpc-test/src/main/java/Server/ByeServiceImpl/Bye2Impl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../rpc5_final/rpc-test/src/main/java/Server/ByeServiceImpl/Bye2Impl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc5_final/rpc-test/src/main/java/Server/ByeServiceImpl/ByeImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../rpc5_final/rpc-test/src/main/java/Server/ByeServiceImpl/ByeImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc5_final/rpc-test/src/main/java/Server/HelloServiceImpl/HelloServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../rpc5_final/rpc-test/src/main/java/Server/HelloServiceImpl/HelloServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc5_final/rpc-test/src/main/java/Server/NacosTestServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../rpc5_final/rpc-test/src/main/java/Server/NacosTestServer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../rpc5_final/rpc-test/target/test-classes/NacosTestClient.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../rpc5_final/rpc-test/target/test-classes/NacosTestServer.class" beforeDir="false" />
     </list>
@@ -229,7 +229,7 @@
       <workItem from="1648000956894" duration="2105000" />
       <workItem from="1648019371696" duration="7993000" />
       <workItem from="1648033547657" duration="37000" />
-      <workItem from="1648042939315" duration="2659000" />
+      <workItem from="1648042939315" duration="3255000" />
     </task>
     <servers />
   </component>
