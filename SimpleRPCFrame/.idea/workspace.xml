@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8862f8d4-1f2a-43ff-816f-db830cb29390" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../rpc1_native/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc1_native/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc1_native/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc1_native/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc1_native/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc1_native/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc1_native/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc1_native/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc1_native/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc1_native/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc1_native/src/main/java/Client/HelloObject.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc1_native/src/main/java/Client/RpcClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc1_native/src/main/java/Client/RpcClientProxy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc1_native/src/main/java/Client/RpcRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc1_native/src/main/java/Server/HelloServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc1_native/src/main/java/Server/RpcResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc1_native/src/main/java/Server/RpcServer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc1_native/src/main/java/Server/WorkerThread.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc1_native/src/main/java/rpc_api/Common/HelloService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc1_native/src/test/java/ProxyTest/Adder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc1_native/src/test/java/ProxyTest/AdderImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc1_native/src/test/java/ProxyTest/Cut.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc1_native/src/test/java/ProxyTest/CutImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc1_native/src/test/java/ProxyTest/DynamicProxy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc1_native/src/test/java/ProxyTest/StaticProxy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc1_native/src/test/java/TestClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc1_native/src/test/java/TestServer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc1_native/target/classes/Client/HelloObject.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc1_native/target/classes/Client/RpcClient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc1_native/target/classes/Client/RpcClientProxy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc1_native/target/classes/Client/RpcRequest$RpcRequestBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc1_native/target/classes/Client/RpcRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc1_native/target/classes/Common/HelloService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc1_native/target/classes/Server/HelloServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc1_native/target/classes/Server/RpcResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc1_native/target/classes/Server/RpcServer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc1_native/target/classes/Server/WorkerThread.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc1_native/target/test-classes/ProxyTest/Adder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc1_native/target/test-classes/ProxyTest/AdderImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc1_native/target/test-classes/ProxyTest/Cut.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc1_native/target/test-classes/ProxyTest/CutImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc1_native/target/test-classes/ProxyTest/DynamicProxy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc1_native/target/test-classes/ProxyTest/StaticProxy$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc1_native/target/test-classes/ProxyTest/StaticProxy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc1_native/target/test-classes/TestClient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc1_native/target/test-classes/TestServer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc1_native/text" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc2_register/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc2_register/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc2_register/src/main/java/Client/HelloObject.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc2_register/src/main/java/Client/RpcClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc2_register/src/main/java/Client/RpcClientProxy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc2_register/src/main/java/Client/RpcRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc2_register/src/main/java/Server/Error/RpcError.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc2_register/src/main/java/Server/Exception/RpcException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc2_register/src/main/java/Server/Registry/DefaultServiceRegistry.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc2_register/src/main/java/Server/Registry/ServiceRegistry.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc2_register/src/main/java/Server/RequestHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc2_register/src/main/java/Server/RequestHandlerThread.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc2_register/src/main/java/Server/RpcResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc2_register/src/main/java/Server/RpcServer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc2_register/src/main/java/Server/WorkerThread.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc2_register/src/main/java/rpc_api/Common/ByeService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc2_register/src/main/java/rpc_api/Common/HelloService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc2_register/src/main/java/rpc_api/Impl/Bye2Impl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc2_register/src/main/java/rpc_api/Impl/ByeImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc2_register/src/main/java/rpc_api/Impl/HelloServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc2_register/src/main/text" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc2_register/src/test/java/SynchronTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc2_register/src/test/java/TestClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc2_register/src/test/java/TestServer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc2_register/target/classes/Client/HelloObject.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc2_register/target/classes/Client/RpcClient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc2_register/target/classes/Client/RpcClientProxy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc2_register/target/classes/Client/RpcRequest$RpcRequestBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc2_register/target/classes/Client/RpcRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc2_register/target/classes/Server/Error/RpcError.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc2_register/target/classes/Server/Exception/RpcException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc2_register/target/classes/Server/Registry/DefaultServiceRegistry.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc2_register/target/classes/Server/Registry/ServiceRegistry.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc2_register/target/classes/Server/RequestHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc2_register/target/classes/Server/RequestHandlerThread.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc2_register/target/classes/Server/RpcResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc2_register/target/classes/Server/RpcServer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc2_register/target/classes/Server/WorkerThread.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc2_register/target/classes/rpc_api/Common/ByeService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc2_register/target/classes/rpc_api/Common/HelloService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc2_register/target/classes/rpc_api/Impl/Bye2Impl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc2_register/target/classes/rpc_api/Impl/ByeImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc2_register/target/classes/rpc_api/Impl/HelloServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc2_register/target/test-classes/ListNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc2_register/target/test-classes/SynchronTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc2_register/target/test-classes/TestClient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc2_register/target/test-classes/TestServer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc3_netty/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc3_netty/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc3_netty/src/main/java/Client/NettyClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc3_netty/src/main/java/Client/NettyClientHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc3_netty/src/main/java/Client/RpcClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc3_netty/src/main/java/Client/RpcClientProxy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc3_netty/src/main/java/Client/RpcRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc3_netty/src/main/java/Client/SocketClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc3_netty/src/main/java/Server/Coder/CommonDecoder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc3_netty/src/main/java/Server/Coder/CommonEncoder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc3_netty/src/main/java/Server/Enumeration/PackageType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc3_netty/src/main/java/Server/Enumeration/SerializerCode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc3_netty/src/main/java/Server/Error/RpcError.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc3_netty/src/main/java/Server/Exception/RpcException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc3_netty/src/main/java/Server/Exception/SerializerException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc3_netty/src/main/java/Server/Handler/NettyServerHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc3_netty/src/main/java/Server/Handler/RequestHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc3_netty/src/main/java/Server/Handler/RequestHandlerThread.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc3_netty/src/main/java/Server/NettyServer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc3_netty/src/main/java/Server/Registry/DefaultServiceRegistry.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc3_netty/src/main/java/Server/Registry/ServiceRegistry.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc3_netty/src/main/java/Server/RpcResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc3_netty/src/main/java/Server/RpcServer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc3_netty/src/main/java/Server/Serializer/CommonSerializer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc3_netty/src/main/java/Server/Serializer/JsonSerializer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc3_netty/src/main/java/Server/Serializer/KryoSerializer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc3_netty/src/main/java/Server/SocketServer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc3_netty/src/main/java/rpc_api/Impl/Bye2Impl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc3_netty/src/main/java/rpc_api/Impl/ByeImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc3_netty/src/main/java/rpc_api/Impl/HelloObject.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc3_netty/src/main/java/rpc_api/Impl/HelloServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc3_netty/src/main/java/rpc_api/Interface/ByeService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc3_netty/src/main/java/rpc_api/Interface/HelloService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc3_netty/src/test/java/NettyTestClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc3_netty/src/test/java/NettyTestServer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc3_netty/src/test/java/ThreadLocalTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc3_netty/src/text" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc3_netty/target/classes/Client/NettyClient$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc3_netty/target/classes/Client/NettyClient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc3_netty/target/classes/Client/NettyClientHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc3_netty/target/classes/Client/RpcClient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc3_netty/target/classes/Client/RpcClientProxy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc3_netty/target/classes/Client/RpcRequest$RpcRequestBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc3_netty/target/classes/Client/RpcRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc3_netty/target/classes/Client/SocketClient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc3_netty/target/classes/Server/Coder/CommonDecoder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc3_netty/target/classes/Server/Coder/CommonEncoder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc3_netty/target/classes/Server/Enumeration/PackageType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc3_netty/target/classes/Server/Enumeration/SerializerCode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc3_netty/target/classes/Server/Error/RpcError.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc3_netty/target/classes/Server/Exception/RpcException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc3_netty/target/classes/Server/Exception/SerializerException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc3_netty/target/classes/Server/Handler/NettyServerHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc3_netty/target/classes/Server/Handler/RequestHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc3_netty/target/classes/Server/Handler/RequestHandlerThread.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc3_netty/target/classes/Server/NettyServer$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc3_netty/target/classes/Server/NettyServer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc3_netty/target/classes/Server/Registry/DefaultServiceRegistry.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc3_netty/target/classes/Server/Registry/ServiceRegistry.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc3_netty/target/classes/Server/RpcResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc3_netty/target/classes/Server/RpcServer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc3_netty/target/classes/Server/Serializer/CommonSerializer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc3_netty/target/classes/Server/Serializer/JsonSerializer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc3_netty/target/classes/Server/Serializer/KryoSerializer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc3_netty/target/classes/Server/SocketServer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc3_netty/target/classes/rpc_api/Impl/Bye2Impl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc3_netty/target/classes/rpc_api/Impl/ByeImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc3_netty/target/classes/rpc_api/Impl/HelloObject.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc3_netty/target/classes/rpc_api/Impl/HelloServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc3_netty/target/classes/rpc_api/Interface/ByeService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc3_netty/target/classes/rpc_api/Interface/HelloService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc3_netty/target/test-classes/NettyTestClient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc3_netty/target/test-classes/NettyTestServer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc3_netty/target/test-classes/ThreadLocalTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc4_nacos/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc4_nacos/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc4_nacos/src/main/java/Client/NettyClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc4_nacos/src/main/java/Client/NettyClientHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc4_nacos/src/main/java/Client/RpcClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc4_nacos/src/main/java/Client/RpcClientProxy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc4_nacos/src/main/java/Client/RpcRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc4_nacos/src/main/java/Client/SocketClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc4_nacos/src/main/java/Server/Balancer/LoadBalancer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc4_nacos/src/main/java/Server/Balancer/RandomLoadBalancer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc4_nacos/src/main/java/Server/Balancer/RoundRobinLoadBalancer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc4_nacos/src/main/java/Server/Coder/CommonDecoder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc4_nacos/src/main/java/Server/Coder/CommonEncoder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc4_nacos/src/main/java/Server/Enumeration/BalancerType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc4_nacos/src/main/java/Server/Enumeration/PackageType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc4_nacos/src/main/java/Server/Enumeration/SerializerCode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc4_nacos/src/main/java/Server/Error/RpcError.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc4_nacos/src/main/java/Server/Exception/RpcException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc4_nacos/src/main/java/Server/Exception/SerializerException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc4_nacos/src/main/java/Server/Factory/ThreadPoolFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc4_nacos/src/main/java/Server/Handler/NettyServerHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc4_nacos/src/main/java/Server/Handler/RequestHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc4_nacos/src/main/java/Server/Handler/RequestHandlerThread.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc4_nacos/src/main/java/Server/NettyServer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc4_nacos/src/main/java/Server/Registry/DefaultServiceRegistry.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc4_nacos/src/main/java/Server/Registry/NacosRemoteRegistry.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc4_nacos/src/main/java/Server/Registry/RemoteRegistry.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc4_nacos/src/main/java/Server/Registry/ServiceRegistry.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc4_nacos/src/main/java/Server/Registry/ShutDownHook.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc4_nacos/src/main/java/Server/RpcResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc4_nacos/src/main/java/Server/RpcServer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc4_nacos/src/main/java/Server/Serializer/CommonSerializer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc4_nacos/src/main/java/Server/Serializer/JsonSerializer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc4_nacos/src/main/java/Server/Serializer/KryoSerializer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc4_nacos/src/main/java/Server/SocketServer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc4_nacos/src/main/java/Utils/NacosUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc4_nacos/src/main/java/rpc_api/Impl/Bye2Impl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc4_nacos/src/main/java/rpc_api/Impl/ByeImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc4_nacos/src/main/java/rpc_api/Impl/HelloObject.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc4_nacos/src/main/java/rpc_api/Impl/HelloServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc4_nacos/src/main/java/rpc_api/Interface/ByeService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc4_nacos/src/main/java/rpc_api/Interface/HelloService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc4_nacos/src/test/java/NacoTestServer2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc4_nacos/src/test/java/NacosTestClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc4_nacos/src/test/java/NacosTestServer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc4_nacos/src/text" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc4_nacos/target/classes/Client/NettyClient$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc4_nacos/target/classes/Client/NettyClient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc4_nacos/target/classes/Client/NettyClientHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc4_nacos/target/classes/Client/RpcClient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc4_nacos/target/classes/Client/RpcClientProxy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc4_nacos/target/classes/Client/RpcRequest$RpcRequestBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc4_nacos/target/classes/Client/RpcRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc4_nacos/target/classes/Client/SocketClient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc4_nacos/target/classes/Server/Balancer/LoadBalancer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc4_nacos/target/classes/Server/Balancer/RandomLoadBalancer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc4_nacos/target/classes/Server/Balancer/RoundRobinLoadBalancer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc4_nacos/target/classes/Server/Coder/CommonDecoder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc4_nacos/target/classes/Server/Coder/CommonEncoder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc4_nacos/target/classes/Server/Enumeration/BalancerType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc4_nacos/target/classes/Server/Enumeration/PackageType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc4_nacos/target/classes/Server/Enumeration/SerializerCode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc4_nacos/target/classes/Server/Error/RpcError.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc4_nacos/target/classes/Server/Exception/RpcException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc4_nacos/target/classes/Server/Exception/SerializerException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc4_nacos/target/classes/Server/Factory/ThreadPoolFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc4_nacos/target/classes/Server/Handler/NettyServerHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc4_nacos/target/classes/Server/Handler/RequestHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc4_nacos/target/classes/Server/Handler/RequestHandlerThread.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc4_nacos/target/classes/Server/NettyServer$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc4_nacos/target/classes/Server/NettyServer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc4_nacos/target/classes/Server/Registry/DefaultServiceRegistry.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc4_nacos/target/classes/Server/Registry/NacosRemoteRegistry.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc4_nacos/target/classes/Server/Registry/RemoteRegistry.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc4_nacos/target/classes/Server/Registry/ServiceRegistry.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc4_nacos/target/classes/Server/Registry/ShutDownHook.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc4_nacos/target/classes/Server/RpcResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc4_nacos/target/classes/Server/RpcServer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc4_nacos/target/classes/Server/Serializer/CommonSerializer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc4_nacos/target/classes/Server/Serializer/JsonSerializer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc4_nacos/target/classes/Server/Serializer/KryoSerializer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc4_nacos/target/classes/Server/SocketServer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc4_nacos/target/classes/Utils/NacosUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc4_nacos/target/classes/rpc_api/Impl/Bye2Impl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc4_nacos/target/classes/rpc_api/Impl/ByeImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc4_nacos/target/classes/rpc_api/Impl/HelloObject.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc4_nacos/target/classes/rpc_api/Impl/HelloServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc4_nacos/target/classes/rpc_api/Interface/ByeService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc4_nacos/target/classes/rpc_api/Interface/HelloService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc4_nacos/target/test-classes/NacoTestServer2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc4_nacos/target/test-classes/NacosTestClient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc4_nacos/target/test-classes/NacosTestServer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc5_final/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc5_final/nacos-start.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc5_final/nacos-start.bat.bak" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc5_final/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc5_final/rpc-api/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc5_final/rpc-api/src/main/java/ByeService/ByeService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc5_final/rpc-api/src/main/java/HelloService/HelloObject.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc5_final/rpc-api/src/main/java/HelloService/HelloService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc5_final/rpc-api/target/classes/ByeService/ByeService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc5_final/rpc-api/target/classes/HelloService/HelloObject.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc5_final/rpc-api/target/classes/HelloService/HelloService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc5_final/rpc-common/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc5_final/rpc-common/src/main/java/Entity/RpcRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc5_final/rpc-common/src/main/java/Entity/RpcResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc5_final/rpc-common/src/main/java/Enumeration/BalancerType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc5_final/rpc-common/src/main/java/Enumeration/PackageType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc5_final/rpc-common/src/main/java/Enumeration/RpcError.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc5_final/rpc-common/src/main/java/Enumeration/SerializerCode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc5_final/rpc-common/src/main/java/Exception/RpcException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc5_final/rpc-common/src/main/java/Exception/SerializerException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc5_final/rpc-common/src/main/java/Factory/ThreadPoolFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc5_final/rpc-common/src/main/java/Utils/NacosUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc5_final/rpc-common/src/main/java/Utils/ReflectUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc5_final/rpc-common/target/classes/Entity/RpcRequest$RpcRequestBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc5_final/rpc-common/target/classes/Entity/RpcRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc5_final/rpc-common/target/classes/Entity/RpcResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc5_final/rpc-common/target/classes/Enumeration/BalancerType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc5_final/rpc-common/target/classes/Enumeration/PackageType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc5_final/rpc-common/target/classes/Enumeration/RpcError.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc5_final/rpc-common/target/classes/Enumeration/SerializerCode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc5_final/rpc-common/target/classes/Exception/RpcException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc5_final/rpc-common/target/classes/Exception/SerializerException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc5_final/rpc-common/target/classes/Factory/ThreadPoolFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc5_final/rpc-common/target/classes/Utils/NacosUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc5_final/rpc-common/target/classes/Utils/ReflectUtils$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc5_final/rpc-common/target/classes/Utils/ReflectUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc5_final/rpc-core/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc5_final/rpc-core/src/main/java/Annotation/Service.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc5_final/rpc-core/src/main/java/Annotation/ServiceScan.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc5_final/rpc-core/src/main/java/Balancer/LoadBalancer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc5_final/rpc-core/src/main/java/Balancer/RandomLoadBalancer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc5_final/rpc-core/src/main/java/Balancer/RoundRobinLoadBalancer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc5_final/rpc-core/src/main/java/Coder/CommonDecoder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc5_final/rpc-core/src/main/java/Coder/CommonEncoder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc5_final/rpc-core/src/main/java/Handler/RequestHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc5_final/rpc-core/src/main/java/Hook/ShutDownHook.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc5_final/rpc-core/src/main/java/Registry/Local/DefaultServiceRegistry.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc5_final/rpc-core/src/main/java/Registry/Local/ServiceRegistry.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc5_final/rpc-core/src/main/java/Registry/Remote/NacosRemoteRegistry.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc5_final/rpc-core/src/main/java/Registry/Remote/RemoteRegistry.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc5_final/rpc-core/src/main/java/Serializer/CommonSerializer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc5_final/rpc-core/src/main/java/Serializer/JsonSerializer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc5_final/rpc-core/src/main/java/Serializer/KryoSerializer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc5_final/rpc-core/src/main/java/Transport/Netty/Client/NettyClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc5_final/rpc-core/src/main/java/Transport/Netty/Client/NettyClientHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc5_final/rpc-core/src/main/java/Transport/Netty/Server/NettyServer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc5_final/rpc-core/src/main/java/Transport/Netty/Server/NettyServerHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc5_final/rpc-core/src/main/java/Transport/RpcClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc5_final/rpc-core/src/main/java/Transport/RpcClientProxy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc5_final/rpc-core/src/main/java/Transport/RpcServer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc5_final/rpc-core/src/main/java/Transport/Socket/Client/SocketClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc5_final/rpc-core/src/main/java/Transport/Socket/Server/SocketRequestHandlerThread.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc5_final/rpc-core/src/main/java/Transport/Socket/Server/SocketServer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc5_final/rpc-core/target/classes/Annotation/Service.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc5_final/rpc-core/target/classes/Annotation/ServiceScan.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc5_final/rpc-core/target/classes/Balancer/LoadBalancer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc5_final/rpc-core/target/classes/Balancer/RandomLoadBalancer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc5_final/rpc-core/target/classes/Balancer/RoundRobinLoadBalancer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc5_final/rpc-core/target/classes/Coder/CommonDecoder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc5_final/rpc-core/target/classes/Coder/CommonEncoder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc5_final/rpc-core/target/classes/Handler/RequestHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc5_final/rpc-core/target/classes/Hook/ShutDownHook.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc5_final/rpc-core/target/classes/Registry/Local/DefaultServiceRegistry.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc5_final/rpc-core/target/classes/Registry/Local/ServiceRegistry.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc5_final/rpc-core/target/classes/Registry/Remote/NacosRemoteRegistry.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc5_final/rpc-core/target/classes/Registry/Remote/RemoteRegistry.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc5_final/rpc-core/target/classes/Serializer/CommonSerializer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc5_final/rpc-core/target/classes/Serializer/JsonSerializer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc5_final/rpc-core/target/classes/Serializer/KryoSerializer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc5_final/rpc-core/target/classes/Transport/Netty/Client/NettyClient$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc5_final/rpc-core/target/classes/Transport/Netty/Client/NettyClient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc5_final/rpc-core/target/classes/Transport/Netty/Client/NettyClientHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc5_final/rpc-core/target/classes/Transport/Netty/Server/NettyServer$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc5_final/rpc-core/target/classes/Transport/Netty/Server/NettyServer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc5_final/rpc-core/target/classes/Transport/Netty/Server/NettyServerHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc5_final/rpc-core/target/classes/Transport/RpcClient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc5_final/rpc-core/target/classes/Transport/RpcClientProxy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc5_final/rpc-core/target/classes/Transport/RpcServer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc5_final/rpc-core/target/classes/Transport/Socket/Client/SocketClient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc5_final/rpc-core/target/classes/Transport/Socket/Server/SocketRequestHandlerThread.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc5_final/rpc-core/target/classes/Transport/Socket/Server/SocketServer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc5_final/rpc-test/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc5_final/rpc-test/src/main/java/Client/NacosTestClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc5_final/rpc-test/src/main/java/Client/TestClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc5_final/rpc-test/src/main/java/Server/ByeServiceImpl/Bye2Impl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc5_final/rpc-test/src/main/java/Server/ByeServiceImpl/ByeImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc5_final/rpc-test/src/main/java/Server/HelloServiceImpl/HelloServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc5_final/rpc-test/src/main/java/Server/NacosTestServer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc5_final/rpc-test/src/main/java/Server/TestServer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc5_final/rpc-test/src/test/java/AnnotationTest/A.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc5_final/rpc-test/src/test/java/AnnotationTest/Test1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc5_final/rpc-test/src/test/java/ReflectTest/Reflect1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc5_final/rpc-test/target/classes/Client/NacosTestClient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc5_final/rpc-test/target/classes/Client/TestClient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc5_final/rpc-test/target/classes/Server/ByeServiceImpl/Bye2Impl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc5_final/rpc-test/target/classes/Server/ByeServiceImpl/ByeImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc5_final/rpc-test/target/classes/Server/HelloServiceImpl/HelloServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc5_final/rpc-test/target/classes/Server/NacosTestServer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc5_final/rpc-test/target/classes/Server/TestServer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc5_final/rpc-test/target/test-classes/AnnotationTest/A.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc5_final/rpc-test/target/test-classes/AnnotationTest/B.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc5_final/rpc-test/target/test-classes/AnnotationTest/Test1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc5_final/rpc-test/target/test-classes/ReflectTest/Reflect1$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rpc5_final/rpc-test/target/test-classes/ReflectTest/Reflect1.class" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="27N4fIKf8xmu26b0r0mSr4n6NuJ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
+  <component name="RunManager" selected="Application.RunClient">
+    <configuration name="RunClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Client.RunClient" />
+      <module name="RPC-run" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Client.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RunServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Server.RunServer" />
+      <module name="RPC-run" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Server.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.RunClient" />
+        <item itemvalue="Application.RunServer" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8862f8d4-1f2a-43ff-816f-db830cb29390" name="Changes" comment="" />
+      <created>1649147312637</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1649147312637</updated>
+      <workItem from="1649147313992" duration="315000" />
+      <workItem from="1649147667460" duration="4939000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/RPC-run/src/main/java/Server/RunServer.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
