@@ -1,3 +1,0 @@
-Q1.class.getCanonicalName()的作用？
-Q2.服务端start/register之后一个while循环如何保证持续接受请求?  accept()方法在接收到q队列套接口前会阻塞直至成功接受
-Q3.注册表为什么用ConcurrentHashMap,单纯的HashMap可否?
