@@ -1,6 +1,9 @@
 package Serializer;
 
 import Entity.RpcResponse;
+import Exception.*;
+import Enumeration.RpcError;
+import Exception.RpcException;
 import Enumeration.SerializerCode;
 import Transport.RpcClient;
 import org.slf4j.Logger;
@@ -27,7 +30,8 @@ public class ObjectSerializer{
                 outputStream.close();
             }
         } catch (IOException e) {
-            logger.error("写入过程有错误发生: ", e);
+            logger.error("Object输入流写入过程有错误发生:{}", e.getMessage());
+            throw new SerializerException("Object输入流写入过程有错误发生");
         }
     }
 
@@ -41,8 +45,8 @@ public class ObjectSerializer{
             }
             return obj;
         } catch (IOException | ClassNotFoundException e) {
-            logger.error("读取过程有错误发生: ", e);
-            return null;
+            logger.error("Object输出流读取过程有错误发生:{}", e.getMessage());
+            throw new SerializerException("Object输出流读取过程有错误发生");
         }
     }
 }

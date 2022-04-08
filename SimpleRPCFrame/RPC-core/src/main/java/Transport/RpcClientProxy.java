@@ -3,6 +3,11 @@ package Transport;
 
 import Entity.RpcRequest;
 import Entity.RpcResponse;
+import Enumeration.StatusCode;
+import Exception.RpcException;
+import Transport.Socket.Client.SocketClient;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
@@ -12,12 +17,13 @@ import java.lang.reflect.Proxy;
  * 客户端处没有接口HelloService的实现类,通过动态代理生成代理对象
  */
 public class RpcClientProxy implements InvocationHandler {
+    private static final Logger logger = LoggerFactory.getLogger(RpcClientProxy.class);
+
     private RpcClient rpcClient;
 
 
     public RpcClientProxy(RpcClient rpcClient) {
         this.rpcClient = rpcClient;
-
     }
 
     //传递host,port指明服务端位置,生成代理对象
@@ -25,7 +31,7 @@ public class RpcClientProxy implements InvocationHandler {
         return (T) Proxy.newProxyInstance(clazz.getClassLoader(), new Class<?>[]{clazz}, this);}
 
     @Override
-    public Object invoke(Object proxy, Method method, Object[] args) {
+    public Object invoke(Object proxy, Method method, Object[] args) throws RpcException {
         RpcRequest request = RpcRequest.builder()
                 .interfaceName(method.getDeclaringClass().getName())
                 .methodName(method.getName())
@@ -33,8 +39,11 @@ public class RpcClientProxy implements InvocationHandler {
                 .paramTypes(method.getParameterTypes())
                 .build();
         //根据所传递的request获取response中的data
-        Object obj = rpcClient.sendRequest(request);
-        return  ((RpcResponse) obj).getData();
-
+        RpcResponse rpcResponse = (RpcResponse) rpcClient.sendRequest(request);
+        if (rpcResponse.getStatusCode() == StatusCode.FAIL.getCode()) {
+            logger.error("客户端获取响应结果失败，错误码:{}", rpcResponse.getStatusCode());
+            return null;
+        }
+        return  rpcResponse.getData();
     }
 }

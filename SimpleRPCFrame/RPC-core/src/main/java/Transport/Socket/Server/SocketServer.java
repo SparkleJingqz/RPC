@@ -63,13 +63,13 @@ public class SocketServer implements RpcServer {
             Socket socket;
             //accept方法不会返回直至ServerSocket中的q队列有套接口, accept方法会返回q队列中的套接口引用,socket引用
             while ((socket = serverSocket.accept()) != null) {
-                logger.info("客户端成功连接, IP为: " + socket.getInetAddress() + ", 端口号为: " + socket.getPort());
+                logger.info("客户端成功连接, IP为:{}, 端口号为:{} ", socket.getInetAddress(), socket.getPort());
                 //调用注册表与处理线程完成服务处理
                 threadPool.execute(new SocketRequestHandlerThread(serializerCode, socket, serviceRegistry, new RequestHandler()));
             }
             threadPool.shutdown();
         } catch (IOException e) {
-            e.printStackTrace();
+            logger.error("监听套接口发生错误:{}", e.getMessage());
         }
     }
 

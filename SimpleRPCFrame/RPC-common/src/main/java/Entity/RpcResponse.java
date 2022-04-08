@@ -1,5 +1,6 @@
 package Entity;
 
+import Enumeration.StatusCode;
 import lombok.Data;
 
 import java.io.Serializable;
@@ -19,7 +20,7 @@ public class RpcResponse<T> implements Serializable {
 
     public static <T> RpcResponse<T> success(T data) {
         RpcResponse<T> response = new RpcResponse<T>();
-        response.setStatusCode(200);
+        response.setStatusCode(StatusCode.SUCCESS.getCode());
         response.setMessage("success");
         response.setData(data);
         return response;
@@ -27,7 +28,7 @@ public class RpcResponse<T> implements Serializable {
 
     public static <T> RpcResponse<T> fail(T data) {
         RpcResponse<T> response = new RpcResponse<T>();
-        response.setStatusCode(300);
+        response.setStatusCode(StatusCode.FAIL.getCode());
         response.setMessage("fail");
         return response;
     }

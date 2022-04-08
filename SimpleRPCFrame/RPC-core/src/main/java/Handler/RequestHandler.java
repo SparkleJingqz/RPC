@@ -3,6 +3,7 @@ package Handler;
 
 import Entity.RpcRequest;
 import Entity.RpcResponse;
+import Enumeration.RpcError;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -17,24 +18,15 @@ public class RequestHandler {
 
     //根据请求与对应注册表中的服务进行处理调用
     public Object handle(RpcRequest rpcRequest, Object service) {
-        Object result = null;
+        Object result;
         try {
-            result = invokeTargetMethod(rpcRequest, service);
+            Method method = service.getClass().getMethod(rpcRequest.getMethodName(), rpcRequest.getParamTypes());
+            result = method.invoke(service, rpcRequest.getParameters());
             logger.info("服务:{} 成功调用方法: {}", rpcRequest.getInterfaceName(), rpcRequest.getMethodName());
-        } catch (InvocationTargetException | IllegalAccessException e) {
-            logger.error("调用时有错误发生: ", e);
+        } catch (InvocationTargetException | IllegalAccessException | NoSuchMethodException e) {
+            logger.error("调用时有错误发生:{}", e.getMessage());
+            return RpcResponse.fail(null);
         }
-        return result;
+        return RpcResponse.success(result);
     }
-
-    private Object invokeTargetMethod(RpcRequest rpcRequest, Object service) throws InvocationTargetException, IllegalAccessException {
-        Method method;
-        try {
-            method = service.getClass().getMethod(rpcRequest.getMethodName(), rpcRequest.getParamTypes());
-        } catch (NoSuchMethodException e) {
-            return RpcResponse.fail("fail");
-        }
-        return method.invoke(service, rpcRequest.getParameters());
-    }
-
 }

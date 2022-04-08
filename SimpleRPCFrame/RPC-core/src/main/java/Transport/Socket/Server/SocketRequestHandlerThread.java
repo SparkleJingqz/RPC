@@ -38,10 +38,9 @@ public class SocketRequestHandlerThread implements Runnable {
             //获取服务注册表中map 接口-实现类service
             Object service = serviceRegistry.getService(interfaceName);
             Object result = requestHandler.handle(rpcRequest, service);
-            SocketEncoder.writeObject(socket.getOutputStream(), RpcResponse.success(result), serializerCode);
-        } catch (Exception e) {
-            logger.error("调用时有错误发生: ", e);
+            SocketEncoder.writeObject(socket.getOutputStream(), result, serializerCode);
+        } catch (IOException | SerialException e) {
+            logger.error("服务器读写过程有错误发生: {}", e.getMessage());
         }
-
     }
 }

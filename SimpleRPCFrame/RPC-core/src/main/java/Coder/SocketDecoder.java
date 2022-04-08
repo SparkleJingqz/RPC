@@ -23,18 +23,18 @@ public class SocketDecoder {
         byte[] numberBytes = new byte[4];
         inputStream.read(numberBytes);
         int magic = bytesToInt(numberBytes);
-        if (magic != MAGIC_NUMBER){
-            logger.error("不识别协议包：{}",magic);
+        if (magic != MAGIC_NUMBER) {
+            logger.error("不识别协议包：{}", magic);
             throw new RpcException(RpcError.UNKNOWN_PROTOCOL);
         }
         inputStream.read(numberBytes);
         int packageCode = bytesToInt(numberBytes);
         Class<?> packageClass;
-        if(packageCode == PackageType.REQUEST_PACK.getCode()){
+        if (packageCode == PackageType.REQUEST_PACK.getCode()) {
             packageClass = RpcRequest.class;
-        }else if(packageCode == PackageType.RESPONSE_PACK.getCode()){
+        } else if (packageCode == PackageType.RESPONSE_PACK.getCode()) {
             packageClass = RpcResponse.class;
-        }else{
+        } else {
             logger.error("不识别协议包：{}",packageCode);
             throw new RpcException(RpcError.UNKNOWN_PACKAGE_TYPE);
         }
@@ -44,7 +44,7 @@ public class SocketDecoder {
             return ObjectSerializer.read(inputStream);
         }
         CommonSerializer serializer = CommonSerializer.getByCode(serializerCode);
-        if(serializer == null){
+        if (serializer == null) {
             logger.error("不识别的反序列化器: {}", serializerCode);
             throw new RpcException(RpcError.UNKNOWN_SERIALIZER);
         }

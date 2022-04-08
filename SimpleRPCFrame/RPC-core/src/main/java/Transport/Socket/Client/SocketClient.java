@@ -2,6 +2,8 @@ package Transport.Socket.Client;
 
 import Coder.SocketDecoder;
 import Coder.SocketEncoder;
+import Entity.RpcResponse;
+import Enumeration.RpcError;
 import Enumeration.SerializerCode;
 import Registry.Remote.NacosRemoteRegistry;
 import Serializer.ObjectSerializer;
@@ -10,6 +12,7 @@ import Registry.Remote.RemoteRegistry;
 import Transport.RpcClient;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import Exception.RpcException;
 
 import javax.sql.rowset.serial.SerialException;
 import java.io.IOException;
@@ -33,7 +36,7 @@ public class SocketClient implements RpcClient {
         this.serializerCode = serializerCode;
     }
 
-    private static final Logger logger = LoggerFactory.getLogger(RpcClient.class);
+    private static final Logger logger = LoggerFactory.getLogger(SocketClient.class);
 
     public Object sendRequest(RpcRequest rpcRequest) {
         InetSocketAddress inetSocketAddress = remoteRegistry.lookupService(rpcRequest.getInterfaceName());
@@ -44,8 +47,8 @@ public class SocketClient implements RpcClient {
             SocketEncoder.writeObject(socket.getOutputStream(), rpcRequest, serializerCode);
             return SocketDecoder.readObject(socket.getInputStream());
         } catch (IOException | SerialException e) {
-            logger.error("传输过程有错误发生: ", e);
-            return null;
+            logger.error("客户端读写过程有错误发生: {}", e.getMessage());
+            return RpcResponse.fail(null);
         }
     }
 }

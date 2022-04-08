@@ -1,5 +1,6 @@
 package Coder;
 
+import Entity.RpcResponse;
 import Enumeration.RpcError;
 import Enumeration.SerializerCode;
 import Exception.*;
@@ -21,7 +22,7 @@ public class SocketEncoder {
 
     private static final int MAGIC_NUMBER=0xCAFEBABE;
 
-    public static void writeObject(OutputStream outputStream, Object object, int serializerCode) throws IOException, SerialException {
+    public static void writeObject(OutputStream outputStream, Object object, int serializerCode) throws IOException, SerialException{
         outputStream.write(intToBytes(MAGIC_NUMBER));
         if (object instanceof RpcRequest) {
             outputStream.write(intToBytes(PackageType.REQUEST_PACK.getCode()));
@@ -35,6 +36,7 @@ public class SocketEncoder {
         }
         CommonSerializer serializer = CommonSerializer.getByCode(serializerCode);
         if (serializer == null) {
+            logger.error(RpcError.SERIALIZER_NOT_FOUND + ":{}", serializerCode);
             throw new RpcException(RpcError.SERIALIZER_NOT_FOUND);
         }
         byte[] bytes = serializer.serialize(object);
