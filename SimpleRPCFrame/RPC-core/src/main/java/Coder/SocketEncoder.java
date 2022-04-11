@@ -7,6 +7,7 @@ import Exception.*;
 import Entity.RpcRequest;
 import Enumeration.PackageType;
 import Serializer.CommonSerializer;
+import lombok.extern.slf4j.Slf4j;
 import org.reflections.serializers.Serializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -16,10 +17,8 @@ import javax.sql.rowset.serial.SerialException;
 import java.io.IOException;
 import java.io.OutputStream;
 
+@Slf4j
 public class SocketEncoder {
-
-    private static final Logger logger= LoggerFactory.getLogger(SocketEncoder.class);
-
     private static final int MAGIC_NUMBER=0xCAFEBABE;
 
     public static void writeObject(OutputStream outputStream, Object object, int serializerCode) throws IOException, SerialException{
@@ -36,7 +35,7 @@ public class SocketEncoder {
         }
         CommonSerializer serializer = CommonSerializer.getByCode(serializerCode);
         if (serializer == null) {
-            logger.error(RpcError.SERIALIZER_NOT_FOUND + ":{}", serializerCode);
+            log.error(RpcError.SERIALIZER_NOT_FOUND + ":{}", serializerCode);
             throw new RpcException(RpcError.SERIALIZER_NOT_FOUND);
         }
         byte[] bytes = serializer.serialize(object);

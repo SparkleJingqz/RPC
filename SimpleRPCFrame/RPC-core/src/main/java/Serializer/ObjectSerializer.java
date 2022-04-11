@@ -6,6 +6,7 @@ import Enumeration.RpcError;
 import Exception.RpcException;
 import Enumeration.SerializerCode;
 import Transport.RpcClient;
+import lombok.extern.slf4j.Slf4j;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -13,9 +14,8 @@ import javax.sql.rowset.serial.SerialException;
 import java.io.*;
 import java.net.Socket;
 
+@Slf4j
 public class ObjectSerializer{
-
-    private static final Logger logger = LoggerFactory.getLogger(ObjectSerializer.class);
 
     /*
     Socket套接口 write方法执行完try块后释放
@@ -30,7 +30,7 @@ public class ObjectSerializer{
                 outputStream.close();
             }
         } catch (IOException e) {
-            logger.error("Object输入流写入过程有错误发生:{}", e.getMessage());
+            log.error("Object输入流写入过程有错误发生:{}", e.getMessage());
             throw new SerializerException("Object输入流写入过程有错误发生");
         }
     }
@@ -45,7 +45,7 @@ public class ObjectSerializer{
             }
             return obj;
         } catch (IOException | ClassNotFoundException e) {
-            logger.error("Object输出流读取过程有错误发生:{}", e.getMessage());
+            log.error("Object输出流读取过程有错误发生:{}", e.getMessage());
             throw new SerializerException("Object输出流读取过程有错误发生");
         }
     }

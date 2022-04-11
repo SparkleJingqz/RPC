@@ -1,8 +1,7 @@
 package Factory;
 
 import com.alibaba.nacos.shaded.com.google.common.util.concurrent.ThreadFactoryBuilder;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import lombok.extern.slf4j.Slf4j;
 
 import java.util.Map;
 import java.util.concurrent.*;
@@ -10,8 +9,8 @@ import java.util.concurrent.*;
 /**
  * 创建线程池工厂
  */
+@Slf4j
 public class ThreadPoolFactory {
-    private static final Logger logger = LoggerFactory.getLogger(ThreadPoolFactory.class);
 
     private static final int CORE_POOL_SIZE = 10;
     private static final int MAXIMUM_POOL_SIZE = 100;
@@ -38,15 +37,15 @@ public class ThreadPoolFactory {
     }
 
     public static void shutDownAll() {
-        logger.info("关闭所有线程池...");
+        log.info("关闭所有线程池...");
         threadPollsMap.entrySet().parallelStream().forEach(entry -> {
             ExecutorService executorService = entry.getValue();
             executorService.shutdown();
-            logger.info("关闭线程池 [{}] [{}]", entry.getKey(), executorService.isTerminated());
+            log.info("关闭线程池 [{}] [{}]", entry.getKey(), executorService.isTerminated());
             try {
                 executorService.awaitTermination(10, TimeUnit.SECONDS);
             } catch (InterruptedException ie) {
-                logger.error("关闭线程池失败！");
+                log.error("关闭线程池失败！");
                 executorService.shutdownNow();
             }
         });

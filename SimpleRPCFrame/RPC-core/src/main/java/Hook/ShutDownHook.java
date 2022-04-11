@@ -3,6 +3,7 @@ package Hook;
 
 import Factory.ThreadPoolFactory;
 import Utils.NacosUtils;
+import lombok.extern.slf4j.Slf4j;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -11,10 +12,8 @@ import java.util.concurrent.ExecutorService;
 /**
  * 关闭服务通知类，当服务端一个Nacos服务要关闭时调用NacosUtils中的方法
  */
+@Slf4j
 public class ShutDownHook {
-
-    private static final Logger logger = LoggerFactory.getLogger(ShutDownHook.class);
-
     private final ExecutorService threadPool = ThreadPoolFactory.createDefaultThreadPool("shutdown-hook");
     //懒汉式单例 - 使用时加载
     private static ShutDownHook shutdownHook;
@@ -40,7 +39,7 @@ public class ShutDownHook {
      * addShutdownHook方法添加的线程再JVM关闭前被调用完成注销工作 -> 保证每次客户端调用的都是在线的服务端信息
      */
     public void addClearAllHook() {
-        logger.info("关闭后将自动注销所有服务");
+        log.info("关闭后将自动注销所有服务");
         Runtime.getRuntime().addShutdownHook(new Thread(() -> {
             NacosUtils.clearRegistry();
             threadPool.shutdown();

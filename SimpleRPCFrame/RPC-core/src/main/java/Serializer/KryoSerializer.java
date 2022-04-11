@@ -7,6 +7,7 @@ import Entity.RpcResponse;
 import com.esotericsoftware.kryo.Kryo;
 import com.esotericsoftware.kryo.io.Input;
 import com.esotericsoftware.kryo.io.Output;
+import lombok.extern.slf4j.Slf4j;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -16,9 +17,8 @@ import java.io.ByteArrayOutputStream;
 /**
  * 实现Kryo序列化器
  */
+@Slf4j
 public class KryoSerializer implements CommonSerializer{
-
-    private static final Logger logger = LoggerFactory.getLogger(KryoSerializer.class);
 
     /**
      * Kryo对应的参数分别都为什么类型?
@@ -43,7 +43,7 @@ public class KryoSerializer implements CommonSerializer{
             kryoThreadLocal.remove();
             return output.toBytes();
         } catch (Exception e) {
-            logger.error("序列化时有错误发生:", e);
+            log.error("序列化时有错误发生:", e);
             //这里为什么要抛出异常而不是返回null?
             throw new SerializerException("序列化时有错误发生");
         }
@@ -58,7 +58,7 @@ public class KryoSerializer implements CommonSerializer{
             kryoThreadLocal.remove();
             return o;
         } catch (Exception e) {
-            logger.error("反序列化时有错误发生:", e);
+            log.error("反序列化时有错误发生:", e);
             throw new SerializerException("反序列化时有错误发生");
         }
     }

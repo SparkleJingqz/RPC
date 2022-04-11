@@ -6,14 +6,14 @@ import Enumeration.SerializerCode;
 import com.alibaba.fastjson.JSON;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import lombok.extern.slf4j.Slf4j;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
 
+@Slf4j
 public class JsonSerializer implements CommonSerializer{
-
-    private static final Logger logger = LoggerFactory.getLogger(JsonSerializer.class);
 
     private ObjectMapper objectMapper = new ObjectMapper();
 
@@ -22,7 +22,7 @@ public class JsonSerializer implements CommonSerializer{
         try {
             return objectMapper.writeValueAsBytes(obj);
         } catch (JsonProcessingException e) {
-            logger.error("序列化时有错误发生!: {}", e.getMessage());
+            log.error("序列化时有错误发生!: {}", e.getMessage());
             throw new SerializerException("序列化时有错误发生");
         }
     }
@@ -38,7 +38,7 @@ public class JsonSerializer implements CommonSerializer{
             }
             return obj;
         } catch (IOException e) {
-            logger.error("反序列化时有错误发生: {}", e.getMessage());
+            log.error("反序列化时有错误发生: {}", e.getMessage());
             throw new SerializerException("反序列化时有错误发生");
         }
     }

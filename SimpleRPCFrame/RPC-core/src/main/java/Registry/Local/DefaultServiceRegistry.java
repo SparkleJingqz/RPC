@@ -2,6 +2,7 @@ package Registry.Local;
 
 import Exception.RpcException;
 import Enumeration.RpcError;
+import lombok.extern.slf4j.Slf4j;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -12,8 +13,8 @@ import java.util.concurrent.ConcurrentHashMap;
 /**
  * 默认注册表实现类
  */
+@Slf4j
 public class DefaultServiceRegistry implements ServiceRegistry{
-    private static Logger logger = LoggerFactory.getLogger(DefaultServiceRegistry.class);
 
     //key-服务名， value-提供服务的对象， set存储当前已被保存的服务
     //服务名->对象实现的接口的完整类名 （一个接口只能由一个对象提供服务）
@@ -35,7 +36,7 @@ public class DefaultServiceRegistry implements ServiceRegistry{
         for (Class<?> i : interfaces) {
             serviceMap.put(i.getCanonicalName(), service);
         }
-        logger.info("向接口: {} 注册服务 {}", interfaces, serviceName);
+        log.info("向接口: {} 注册服务 {}", interfaces, serviceName);
     }
 
     @Override

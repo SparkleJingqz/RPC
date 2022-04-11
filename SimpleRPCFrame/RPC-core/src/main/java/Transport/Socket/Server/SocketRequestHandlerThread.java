@@ -8,15 +8,14 @@ import Entity.RpcRequest;
 import Entity.RpcResponse;
 import Handler.RequestHandler;
 import Registry.Local.ServiceRegistry;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import lombok.extern.slf4j.Slf4j;
 
 import javax.sql.rowset.serial.SerialException;
 import java.io.IOException;
 import java.net.Socket;
 
+@Slf4j
 public class SocketRequestHandlerThread implements Runnable {
-    private static final Logger logger = LoggerFactory.getLogger(SocketRequestHandlerThread.class);
 
     private Socket socket;
     private ServiceRegistry serviceRegistry;
@@ -40,7 +39,7 @@ public class SocketRequestHandlerThread implements Runnable {
             Object result = requestHandler.handle(rpcRequest, service);
             SocketEncoder.writeObject(socket.getOutputStream(), result, serializerCode);
         } catch (IOException | SerialException e) {
-            logger.error("服务器读写过程有错误发生: {}", e.getMessage());
+            log.error("服务器读写过程有错误发生: {}", e.getMessage());
         }
     }
 }
